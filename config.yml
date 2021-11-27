@@ -1,0 +1,20 @@
+app:
+  random_blocks: 100
+  num_transaction: 100
+  repeat: 10
+  ms_between_repeat: 500
+  mode: 1 # 1 (gRPC Coroutines), 2 (gRPC Java Thread), 3 (HTTP Async)
+minter:
+  urlapi: 'http://127.0.0.1:8843/v2'
+#  urlapi: 'http://node.knife.io:8843/v2'
+#  urlapi: 'https://mnt.funfasy.dev/v***'
+  timeout: 120.0
+  grpc_hostname: 127.0.0.1
+#  grpc_hostname: node.knife.io
+  grpc_port: 8842
+#  grpc_deadline: 120000
+
+#  http_headers:
+    #For funfasy.dev X-Project-Id and X-Project-Secret
+#    X-Project-Id: ________
+#    X-Project-Secret: ________
